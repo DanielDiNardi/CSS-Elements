@@ -1,0 +1,42 @@
+@font-face {
+    font-family: btnFont;
+    src: url("../Fonts/MORPHEUS.TTF");
+}
+
+body{
+    background-image: url("../Images/woodBackground.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+a{
+    /* shape */
+    font-size: 1.5rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-width: .125em;
+
+    /* style */
+    background-image: url("../Images/marbleBackground.jpg");
+    border: .125em solid black;
+    border-image: url("../Images/borderBackground.jpg");
+    border-image-slice: 10;
+    border-image-width: .125em;
+    border-image-repeat: round;
+    color: white;
+    font-family: btnFont;
+    box-shadow: 0 0 1em 0 black, inset 0 0 1em 0 black;
+    text-shadow: 0 0 .125em 0 black;
+}
+
+a:hover{
+    box-shadow: 0 0 2em 0 black, inset 0 0 2em 0 black;
+    text-shadow: 0 0 .5em 0 black;
+}
