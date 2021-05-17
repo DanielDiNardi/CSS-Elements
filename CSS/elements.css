@@ -14,6 +14,7 @@ body{
     place-items: center;
 }
 
+/* Button */
 a{
     /* shape */
     font-size: 1.5rem;
@@ -34,9 +35,60 @@ a{
     font-family: btnFont;
     box-shadow: 0 0 0 .05em black, inset 0 0 0 .05em black;
     text-shadow: 0 0 .125em 0 black;
+    visibility: hidden;
 }
 
 a:hover{
     box-shadow: 0 0 0 .05em black, inset 0 0 1em 0 black;
     text-shadow: 0 0 .5em 0 black;
+}
+
+#wrapper {
+    overflow: hidden;
+    width: fit-content;
+    height: 25rem;
+}
+
+/* Bookmark */
+.bookmark{
+    /*shape*/
+    position: relative;
+    width: 5rem;
+    height: 18rem;
+    top: 0%;
+
+    /* style */
+    background-color: #7C272A;
+    border-left: .4em solid #7C272A;
+    border-right: .4em solid #7C272A;
+    box-shadow: inset  .3em 0 0 0 darkgoldenrod,
+    inset  -.3em 0 0 0 darkgoldenrod;
+}
+
+.bookmark::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    height: 10%;
+    width: 50%;
+    top: 99%;
+    right: 50%;
+    background-color: #7C272A;
+    border-bottom-right-radius: 100%;
+    border-left: .4em solid #7C272A;
+    box-shadow: inset  .3em 0 0 0 darkgoldenrod;
+}
+
+.bookmark::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    height: 10%;
+    width: 50%;
+    top: 99%;
+    left: 50%;
+    background-color: #7C272A;
+    border-bottom-left-radius: 100%;
+    border-right: .4em solid #7C272A;
+    box-shadow: inset  -.3em 0 0 0 darkgoldenrod;
 }
